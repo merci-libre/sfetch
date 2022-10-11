@@ -1,4 +1,4 @@
-# Shell Random Greeter
+# sfetch - A fork of Shell Random Greeter
 A simple bash script that will generate a random ASCII art -OR- Quote when ran. Looks like this:
 
 ```
