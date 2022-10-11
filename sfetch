@@ -1,0 +1,58 @@
+#!/bin/bash
+
+# Credits #
+: '
+ALL ART IS CREDITED TO ORIGINAL ARTIST WHEN APPLICABLE
+
+ART SOURCES: https://www.asciiart.eu/
+'
+# VARIABLES #
+
+ls $HOME/.config/shellrandomgreeter/prompts | nl > $HOME/.config/shellrandomgreeter/indexing/filesindex
+filecount=$(grep -c "" $HOME/.config/shellrandomgreeter/indexing/filesindex)
+
+if [[ -n $1 ]];then
+	RANDINT=$1
+else
+	RANDINT=$(($RANDOM%$filecount+1))
+fi
+
+filechosen=$(grep -w $RANDINT $HOME/.config/shellrandomgreeter/indexing/filesindex | awk '{print $2}')
+
+CURRENT_TIME=$( date '+%H:%M:%S') # Just the current time for the 'TIME of terminal start-- can be used in the quotes section as well.'
+##############################################################################################################
+
+function welcome() { # Welcome script
+        echo -e '\e[31m<Welcome!>\e[0m' '{'"\e[33m$USER\e[0m"'@'"\e[33m$HOSTNAME\e[0m"'}' # username@host using env
+        echo -e "\e[92mYour Current Directory is\e[0m:" "\e[94m$PWD\e[0m" # Current Directory
+        echo -e "\e[92mTime of Terminal Start\e[0m:" "["$CURRENT_TIME"]" # Time of start
+        echo -e "\e[92mDefault Shell\e[0m:" $(echo $SHELL | cut -c 10-) # Default Shell
+	echo -e "\e[92mUptime\e[0m:" $(uptime --pretty | cut -c 4-)
+        echo '____________________________________'
+        
+        echo -e "\n\e[92m<About system:>\e[0m" # System info
+        echo "CPU" $( lscpu | grep "Model name" ) # CPU
+        lsmem --summary # Memory info
+        echo "Kernel:" $(uname --kernel-release) # Kernel info
+        echo -e "____________________________________\n"
+}
+welcome
+
+# ART and Quotes #
+# Prompts are generated in $HOME/.config/
+
+function art() {
+	cat $HOME/.config/shellrandomgreeter/prompts/$filechosen
+}
+art
+echo -e '____________________________________\n'
+
+# DEBUG MENU (uncomment to use)
+function debug() {
+	echo "DEBUG MENU:"
+	echo "========================"
+	echo "RANGE: " $RANGE
+	echo "RANDINT:" $RANDINT
+	echo "File Chosen: $filechosen"
+}
+#debug
