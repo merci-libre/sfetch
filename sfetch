@@ -51,7 +51,7 @@ echo -e '____________________________________\n'
 function debug() {
 	echo "DEBUG MENU:"
 	echo "========================"
-	echo "RANGE: " $RANGE
+	echo "RANGE: " $filecount
 	echo "RANDINT:" $RANDINT
 	echo "File Chosen: $filechosen"
 }
