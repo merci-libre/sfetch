@@ -35,24 +35,25 @@ FISH, BASH, ZSH, TCSH, and KSH
 ## Install from Install Script (Mac {Not tested} / Linux):
 1. In a terminal, type `$ chmod +x install.sh`
 2. In the same terminal, type: `$ ./install` and run through Installation Process.
-3. Run `$ shell-random-greeter` or `$ ls /usr/bin | grep shell-random-greeter` to test if the command copied to the right directory
+3. Run `$ sfetch` or `$ ls /usr/bin | grep sfetch` to test if the command copied to the right directory
 
 ## Manual Install (Linux/Unix Systems)
-1. In a terminal type: `$ chmod +x shell-random-greeter`
-2. In the same terminal, type `$ sudo cp shell-random-greeter /usr/bin` (If not /usr/bin/, then wherever your CLI commands are held).
-3. Run `$ shell-random-greeter` or `$ ls /path/to/dir| grep shell-random-greeter` to test if the command copied to the right directory
+1. In a terminal type: `$ chmod +x sfetch`
+2. In the same terminal, type `$ sudo cp sfetch /usr/bin` (If not /usr/bin/, then wherever your CLI commands are held).
+3. Run `$ sfetch` or `$ ls /usr/bin/sfetch` to test if the command copied to the right directory
 
 # Installing to $SHELL (MANUAL ONLY!)
 Installing to any shell:
 1. Edit your config file, (looks like `.*rc` or check your shell's documentation for this)
-2. Add `shell-random-greeter` in it's own line
+2. Add `sfetch` in it's own line
 3. Source it with `$ source path/to/config` and enjoy!
 
 --------------------------------------------------------------------------------
 
-# Post-Customizing 'Shell-Random-Greeter' (For Manual Install only)
-!!! You can now edit `shell-random-greeter` without superuser priviledges!
-You may configure prompts from ~/.config/shellrandomgreeter/config
+# Post-Customizing 'sfetch' (For Manual Install only)
+!!! You can now easily create prompts for `sfetch` without superuser priviledges!
+You may configure prompts from `~/.config/shellrandomgreeter/prompts/~
+to do so, create a text file in `.config/shellrandomgreeter/prompts` and input whatever text you would like!
 
 --------------------------------------------------------------------------------
 
@@ -70,7 +71,7 @@ Notes:
 - Same goes for any other Unix-Like System. If any issues sprout up, pls post in the Bug Reports. Or email me @westwardfishdme@gmail.com :P
 --------------------------------------------------------------------------------
 ## Calling Custom Quotes:
-if you would rather call a specific quote, you may use `shell-random-greeter [1,2,3....]` which will then show that specific art/quote when running the script 
+if you would rather call a specific quote, you may use `sfetch [1,2,3....]` which will then show that specific art/quote when running the script 
 
 --------------------------------------------------------------------------------
 Enjoy the script!
