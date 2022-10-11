@@ -20,6 +20,6 @@ Read response above.
 
 ## Will this be rewritten into another language?
 
-Already in the works, but will be posted as a fork of this project.
+~~Already in the works, but will be posted as a fork of this project.~~
 
 
