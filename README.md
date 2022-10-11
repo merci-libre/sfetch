@@ -52,7 +52,7 @@ Installing to any shell:
 
 # Post-Customizing 'sfetch' (For Manual Install only)
 !!! You can now easily create prompts for `sfetch` without superuser priviledges!
-You may configure prompts from `~/.config/shellrandomgreeter/prompts/~
+You may configure prompts from `~/.config/shellrandomgreeter/prompts/~`
 to do so, create a text file in `.config/shellrandomgreeter/prompts` and input whatever text you would like!
 
 --------------------------------------------------------------------------------
