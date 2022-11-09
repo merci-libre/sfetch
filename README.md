@@ -67,7 +67,7 @@ Unix Shells:
 --------------------------------------------------------------------------------
 Notes:
 - ~~WinBash is sort of buggy, but I'll work it out~~ Windows is depreciated.
-- ~~Should work just fine on MacOS-- Since Mac's utilize the ZSH shell and is a UNIX-like OS, but I haven't tested it yet.~~ Upcoming update for better OS detection. `lscpu` is a part of the `linuxutils`.
+- ~~Should work just fine on MacOS-- Since Mac's utilize the ZSH shell and is a UNIX-like OS, but I haven't tested it yet.~~ Upcoming update for better OS detection. `lscpu` is a part of the `linuxutils` package.
 - Same goes for any other Unix-Like System. If any issues sprout up, pls post in the Bug Reports. Or email me @westwardfishdme@gmail.com :P
 --------------------------------------------------------------------------------
 ## Calling Custom Quotes:
