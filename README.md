@@ -46,7 +46,7 @@ FISH, BASH, ZSH, TCSH, and KSH
 Installing to any shell:
 1. Edit your config file, (looks like `.*rc` or check your shell's documentation for this)
 2. Add `sfetch` in it's own line
-3. Source it with `$ source path/to/config` and enjoy!
+3. Source the `.rc` file with `$ source path/to/.rc` to restart your shell and enjoy!
 
 --------------------------------------------------------------------------------
 
